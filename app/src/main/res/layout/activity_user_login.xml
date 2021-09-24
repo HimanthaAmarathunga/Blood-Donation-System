@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin">
+
+    <EditText
+        android:id="@+id/UL_ET_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/user_login_ET_username"
+        android:textColor="#777777"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="333dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/UL_ET_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/user_login_ET_password"
+        android:textColor="#777777"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="405dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/UL_TV_username"
+        android:layout_width="96dp"
+        android:layout_height="29dp"
+        android:text="@string/user_login_username"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <TextView
+        android:id="@+id/UL_TV_password"
+        android:layout_width="98dp"
+        android:layout_height="29dp"
+        android:text="@string/user_login_password"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <Button
+        android:id="@+id/UL_B_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_login_button"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <ImageView
+        android:id="@+id/UL_IV_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="122dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
