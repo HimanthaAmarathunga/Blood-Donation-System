@@ -13,7 +13,13 @@
         <activity android:name=".hospitalinfo" android:exported="true" />
         <activity android:name=".availabilityofblood" android:exported="true" />
         <activity android:name=".updateavailability" android:exported="true" />
-        <activity android:name=".AvailabilityListSource" android:exported="true" />
+        <activity android:name=".AvailabilityListSource" android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".RequestBlood" />
         <activity android:name=".UserLogin" />
         <activity android:name=".UpdateBloodReceiver" />
