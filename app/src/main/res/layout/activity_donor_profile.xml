@@ -12,27 +12,33 @@
         android:orientation="vertical"
         tools:context=".DonorProfile">
 
-    <RelativeLayout
-        android:id="@+id/action_bar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/colorActionbarColor">
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorActionbarColor"
+        android:weightSum="3">
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/action_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="@color/colorActionbarColor">-->
 
-        <ImageView
-            android:id="@+id/ivBack"
-            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-            android:layout_width="27dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:scaleType="center"
-            android:visibility="visible"
-            app:srcCompat="@drawable/ic_back_arrow" />
+<!--        <ImageView-->
+<!--            android:id="@+id/ivBack"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"-->
+<!--            android:layout_width="27dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:background="?android:attr/selectableItemBackground"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:scaleType="center"-->
+<!--            android:visibility="visible"-->
+<!--            app:srcCompat="@drawable/ic_back_arrow" />-->
 
         <TextView
             android:id="@+id/txt_title"
@@ -41,11 +47,14 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:scaleType="center"
-            android:text="@string/RegisterHeading"
+            android:text="DONOR PROFILE"
             android:textColor="#000000"
-            android:textSize="16dp" />
+            android:textSize="25dp"
+            android:layout_marginLeft="100dp"/>
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
+
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -76,7 +85,7 @@
                     android:id="@+id/DP_TV_show_national_id"
                     android:layout_width= "160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV NATIONAL ID"
+
                     android:layout_marginLeft="15dp"
                     android:textColor="#000000"
                     android:layout_weight="2"
@@ -103,7 +112,7 @@
                     android:id="@+id/DP_TV_show_name"
                     android:layout_width= "160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV NAME"
+
                     android:layout_marginLeft="15dp"
                     android:textColor="#000000"
                     android:layout_weight="2"
@@ -130,7 +139,7 @@
                     android:id="@+id/DP_TV_show_blood_type"
                     android:layout_width= "160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV BLOOD TYPE"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -156,7 +165,7 @@
                     android:id="@+id/DP_TV_show_gender"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV GENDER"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -182,7 +191,7 @@
                     android:id="@+id/DP_TV_show_dob"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV DOB"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -208,7 +217,7 @@
                     android:id="@+id/DP_TV_show_phone"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV PHONE"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -235,7 +244,7 @@
                     android:id="@+id/DP_TV_show_email"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV EMAIL"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -262,7 +271,7 @@
                     android:id="@+id/DP_TV_show_address"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV ADDRESS"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"
@@ -289,7 +298,7 @@
                     android:id="@+id/DP_TV_show_city"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:text="TV CITY"
+
                     android:layout_marginLeft="15dp"
                     android:layout_weight="2"
                     android:textColor="#000000"

@@ -13,39 +13,50 @@
         android:orientation="vertical"
         tools:context=".DonorProfile">
 
-    <RelativeLayout
-        android:id="@+id/action_bar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/colorActionbarColor">
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorActionbarColor"
+        android:weightSum="3">
 
-        <ImageView
-            android:id="@+id/ivBack"
-            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-            android:layout_width="27dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:scaleType="center"
-            android:visibility="visible"
-            app:srcCompat="@drawable/ic_back_arrow" />
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/action_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="@color/colorActionbarColor">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivBack"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"-->
+<!--            android:layout_width="27dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:background="?android:attr/selectableItemBackground"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:scaleType="center"-->
+<!--            android:visibility="visible"-->
+<!--            app:srcCompat="@drawable/ic_back_arrow" />-->
 
         <TextView
             android:id="@+id/DR_TV_register_heading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
             android:text="@string/donor_profile_register_heading"
             android:textColor="#000000"
             android:textSize="25sp"
-            android:layout_centerInParent="true"
-            android:scaleType="center"/>
+            android:layout_marginLeft="60dp"
+            />
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -331,6 +342,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>

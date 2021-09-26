@@ -1,5 +1,6 @@
 package com.example.blooddonationsystem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,12 +13,22 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.lang.reflect.Field;
+
 public class RegisterBloodDonor extends AppCompatActivity {
     EditText National_Id, Name, DOB, Email, Phone, Address, City;
     RadioButton Male, Female;
     Spinner Blood_Type;
+    DatabaseReference dbRef;
     Button Register;
-//    Donor donor;
+    Donor donor;
+    int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +49,22 @@ public class RegisterBloodDonor extends AppCompatActivity {
 
         Register = findViewById(R.id.DR_B_register);
 
-//        donor = new Donor;
+        donor = new Donor();
+
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Donor");
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()) {
+                    i = (int) dataSnapshot.getChildrenCount();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +85,17 @@ public class RegisterBloodDonor extends AppCompatActivity {
                     }else if (TextUtils.isEmpty(City.getText().toString())) {
                         Toast.makeText(RegisterBloodDonor.this, "Enter City", Toast.LENGTH_SHORT).show();
                     }else {
+                        donor.setNationalId(National_Id.getText().toString().trim());
+                        donor.setName(Name.getText().toString().trim());
+                        donor.setDob(DOB.getText().toString().trim());
+//                        gender
+                        donor.setEmail(Email.getText().toString().trim());
+                        donor.setPhone(Phone.getText().toString().trim());
+                        donor.setAddress(Address.getText().toString().trim());
+                        donor.setCity(City.getText().toString().trim());
+//                        donor.setFields();
+
+                        dbRef.push().setValue(donor);
                         Toast.makeText(getApplicationContext(),"Registration Successful", Toast.LENGTH_LONG).show();
                     }
                 }catch (Exception e) {
