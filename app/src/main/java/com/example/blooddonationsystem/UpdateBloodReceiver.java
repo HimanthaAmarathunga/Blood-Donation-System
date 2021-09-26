@@ -58,7 +58,7 @@ public class UpdateBloodReceiver extends AppCompatActivity {
 //
 //                National_Id.setText(receiver.getNationalId());
 //                Name.setText(receiver.getName());
-////                DOB.setText(receiver.setDob());
+////                DOB.setText(receiver.getDob());
 //                Email.setText(receiver.getEmail());
 ////                gender
 //                Phone.setText(receiver.getPhone());
