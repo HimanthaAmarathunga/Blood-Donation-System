@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RequestBlood"></activity>
-        <activity android:name=".UserLogin" />
+        <activity android:name=".UserLogin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".UpdateBloodReceiver" />
         <activity android:name=".UpdateBloodDonor" />
         <activity android:name=".RegisterBloodReceiver" />

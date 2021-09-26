@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E44949">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="@color/colorActionbarColor">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="49dp"
+                android:layout_toStartOf="@+id/txt_title"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:text="@string/RegisterHeading"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_hpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hospital Name"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/DR_ET_Hpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hospital Name"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_A_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select A"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/DR_RB_male"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:text="A+" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_female"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="A-"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Ab"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="both" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select B"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Bp"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:text="b+" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Bm"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="B-" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Bb"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="both" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_AB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select AB"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/DR_RB_ABp"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:text="AB+" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_ABm"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="AB-" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_ABb"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="both" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select O"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Op"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:text="O+" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Om"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="O-" />
+
+                <RadioButton
+                    android:id="@+id/DR_RB_Ob"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="both" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="City"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/DR_ET_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Enter City"
+                android:textColor="#777777" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/donor_profile_phone_number"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/DR_ET_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/donor_profile_ET_phone_number"
+                android:textColor="#777777" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/DR_B_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="update" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/DR_B_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="delete" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
