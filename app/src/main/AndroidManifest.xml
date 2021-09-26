@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RequestBlood"></activity>
-        <activity android:name=".UserLogin" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".hospitalmanagement" android:exported="true" />
+        <activity android:name=".hospitalinfo" android:exported="true" />
+        <activity android:name=".availabilityofblood" android:exported="true" />
+        <activity android:name=".updateavailability" android:exported="true" />
+        <activity android:name=".AvailabilityListSource" android:exported="true" />
+        <activity android:name=".RequestBlood" />
+        <activity android:name=".UserLogin" />
         <activity android:name=".UpdateBloodReceiver" />
         <activity android:name=".UpdateBloodDonor" />
         <activity android:name=".RegisterBloodReceiver" />
         <activity android:name=".RegisterBloodDonor" />
         <activity android:name=".ReceiverProfile" />
         <activity android:name=".DonorProfile" />
+
     </application>
 
 </manifest>

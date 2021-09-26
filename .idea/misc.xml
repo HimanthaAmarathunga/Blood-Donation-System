@@ -3,17 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_availability_list_source.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_availabilityofblood.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_donor_profile.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_hospitalinfo.xml" value="0.2296875" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_hospitalmanagement.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_receiver_profile.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_register_blood_donor.xml" value="0.1" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_register_blood_receiver.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_request_blood.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_update_blood_donor.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_update_blood_receiver.xml" value="0.15443840579710144" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_updateavailability.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/activity_user_login.xml" value="0.15443840579710144" />
-        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/availability_list.xml" value="0.25" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/availability_list.xml" value="0.1" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/availability_of_blood.xml" value="0.264" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/hospital_info.xml" value="0.264" />
+        <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/hospitalmanagement.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/Vidushan/Desktop/BD System/Blood-Donation-System/app/src/main/res/layout/update_availability.xml" value="0.15443840579710144" />
       </map>
     </option>

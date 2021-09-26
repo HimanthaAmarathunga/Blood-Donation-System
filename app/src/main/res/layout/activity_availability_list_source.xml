@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E44949">
-
+    tools:context=".AvailabilityListSource">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -15,21 +14,21 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/action_bar"
             android:layout_width="match_parent"
             android:layout_height="81dp"
-            android:background="@color/colorActionbarColor">
+            android:background="@color/colorAccent">
 
             <ImageView
                 android:id="@+id/ivBack"
                 style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="57dp"
+                android:layout_height="40dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="16dp"
-                android:layout_marginEnd="49dp"
+                android:layout_marginEnd="76dp"
                 android:layout_toStartOf="@+id/txt_title"
                 android:background="?android:attr/selectableItemBackground"
                 android:clickable="true"
@@ -46,11 +45,11 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:scaleType="center"
-                android:text="@string/RegisterHeading"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                android:text="Availability List"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
 
         <LinearLayout
@@ -321,10 +320,17 @@
 
             <Button
                 android:id="@+id/DR_B_update"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
+                android:background="@android:color/holo_blue_dark"
                 android:text="update" />
+
+            <Button
+                android:id="@+id/DR_B_delete"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="delete" />
         </LinearLayout>
 
         <LinearLayout
@@ -333,12 +339,7 @@
             android:layout_marginBottom="20dp"
             android:weightSum="3">
 
-            <Button
-                android:id="@+id/DR_B_delete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
-                android:text="delete" />
+
         </LinearLayout>
 
 
