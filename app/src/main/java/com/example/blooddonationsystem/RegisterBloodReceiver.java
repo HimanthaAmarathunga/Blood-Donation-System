@@ -1,5 +1,6 @@
 package com.example.blooddonationsystem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,11 +13,20 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class RegisterBloodReceiver extends AppCompatActivity {
     EditText National_Id, Name, DOB, Email, Phone, Address, City;
     RadioButton Male, Female;
     Spinner Blood_Type;
     Button Register;
+    DatabaseReference dbRef;
+    Receiver receiver;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +47,21 @@ public class RegisterBloodReceiver extends AppCompatActivity {
 
         Register = findViewById(R.id.RR_B_register);
 
+        receiver = new Receiver();
+
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Receiver");
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                i = (int) dataSnapshot.getChildrenCount();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +81,17 @@ public class RegisterBloodReceiver extends AppCompatActivity {
                     }else if (TextUtils.isEmpty(City.getText().toString())) {
                         Toast.makeText(RegisterBloodReceiver.this, "Enter City", Toast.LENGTH_SHORT).show();
                     }else {
+                        receiver.setNationalId(National_Id.getText().toString().trim());
+                        receiver.setName(Name.getText().toString().trim());
+                        receiver.setDob(DOB.getText().toString().trim());
+//                        receiver.setGender(Gender.getText().toString().trim());
+//                        receiver.setBloodType(Blood_Type.getText().toString().trim());
+                        receiver.setEmail(Email.getText().toString().trim());
+                        receiver.setPhone(Phone.getText().toString().trim());
+                        receiver.setAddress(Address.getText().toString().trim());
+                        receiver.setCity(City.getText().toString().trim());
+
+                        dbRef.push().setValue(receiver);
                         Toast.makeText(getApplicationContext(),"Registration Successful", Toast.LENGTH_LONG).show();
                     }
                 }catch (Exception e) {

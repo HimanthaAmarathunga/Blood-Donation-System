@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class UserLogin extends AppCompatActivity {
     EditText Username, Password;
-    Button Login;
+    Button Login, Register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class UserLogin extends AppCompatActivity {
         Password= findViewById(R.id.UL_ET_password);
 
         Login= findViewById(R.id.UL_B_login);
+        Register= findViewById(R.id.UL_B_Register);
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,14 @@ public class UserLogin extends AppCompatActivity {
                 }
 
                 loadHomePage();   //Loads the homepage when successfully logged in
+            }
+        });
+
+        Register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserLogin.this, RequestBlood.class);
+                startActivity(intent);
             }
         });
     }
