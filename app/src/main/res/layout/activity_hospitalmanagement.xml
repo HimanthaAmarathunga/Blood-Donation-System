@@ -15,24 +15,24 @@
         tools:layout_editor_absoluteY="1dp"
         tools:ignore="MissingConstraints">
 
-        <LinearLayout
-            android:id="@+id/action_bar"
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:background="@color/colorAccent">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/action_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@color/colorAccent">-->
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_marginBottom="20dp"
-                android:weightSum="3">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="240dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:weightSum="3">-->
 
                 <TextView
                     android:id="@+id/txt_title"
                     style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:scaleType="center"
                     android:text="Hospital mangement"
@@ -41,8 +41,8 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="100dp"/>
 
-            </LinearLayout>
-        </LinearLayout>
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
 
 
         <LinearLayout
@@ -51,11 +51,13 @@
             android:layout_marginBottom="20dp"
             android:weightSum="3">
 
+
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="246dp"
-                tools:srcCompat="@drawable/hos1" />
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/hos1" />
         </LinearLayout>
 
 

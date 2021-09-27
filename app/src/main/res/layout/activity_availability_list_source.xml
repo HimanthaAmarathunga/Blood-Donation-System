@@ -10,33 +10,33 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
+
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <LinearLayout
-            android:id="@+id/action_bar"
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:background="@color/colorAccent">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/action_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="81dp"-->
+<!--            android:background="@color/colorAccent">-->
 
-            <ImageView
-                android:id="@+id/ivBack"
-                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                android:layout_width="57dp"
-                android:layout_height="40dp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginEnd="76dp"
-                android:layout_toStartOf="@+id/txt_title"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:scaleType="center"
-                android:visibility="visible"
-                app:srcCompat="@drawable/ic_back_arrow" />
+<!--            <ImageView-->
+<!--                android:id="@+id/ivBack"-->
+<!--                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"-->
+<!--                android:layout_width="57dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginEnd="76dp"-->
+<!--                android:layout_toStartOf="@+id/txt_title"-->
+<!--                android:background="?android:attr/selectableItemBackground"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:scaleType="center"-->
+<!--                android:visibility="visible"-->
+<!--                app:srcCompat="@drawable/ic_back_arrow" />-->
 
             <TextView
                 android:id="@+id/txt_title"
@@ -47,9 +47,10 @@
                 android:scaleType="center"
                 android:text="Availability List"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp" />
+                android:textSize="25sp"
+                android:layout_marginLeft="100dp"/>
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
 
         <LinearLayout
@@ -75,7 +76,7 @@
                 android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Hospital Name"
+                android:hint="Hospital Name"
                 android:textColor="#777777" />
         </LinearLayout>
 
@@ -321,29 +322,21 @@
             <Button
                 android:id="@+id/DR_B_update"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="@android:color/holo_blue_dark"
                 android:text="update" />
 
             <Button
                 android:id="@+id/DR_B_delete"
                 android:layout_width="221dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="@color/colorAccent"
                 android:text="delete" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:weightSum="3">
 
-
-        </LinearLayout>
 
 
     </LinearLayout>
-
 </ScrollView>
 
