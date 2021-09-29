@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_view_selected" type="id" />
+    <item name="radioGroup" type="id" />
+    <item name="button_apply" type="id" />
+</resources>

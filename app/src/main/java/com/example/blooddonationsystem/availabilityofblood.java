@@ -6,45 +6,51 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 
 public class availabilityofblood extends AppCompatActivity {
+    RadioGroup radioGroup;
+    RadioButton radioButton;
+    TextView textView;
 
-    TextView National_id, Name, Blood_type, Gender, DOB, Phone, Email, Address, City;
-    Button Update, Delete;
-    DatabaseReference dbRef;
-    final static String key="";
-    Donor donor;
+
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_availabilityofblood);
         setContentView(R.layout.activity_hospitalmanagement);
 
-        National_id = findViewById(R.id.DP_TV_show_national_id);
-        Name = findViewById(R.id.DP_TV_show_name);
-        Blood_type = findViewById(R.id.DP_TV_show_blood_type);
-        Gender = findViewById(R.id.DP_TV_show_gender);
-        DOB = findViewById(R.id.DP_TV_show_dob);
-        Phone = findViewById(R.id.DP_TV_show_phone);
-        Email = findViewById(R.id.DP_TV_show_email);
-        Address = findViewById(R.id.DP_TV_show_address);
-        City = findViewById(R.id.DP_TV_show_city);
+        radioGroup = findViewById(R.id.radioGroup);
+        textView = findViewById(R.id.text_view_selected);
 
-        Update = findViewById(R.id.DP_B_update);
-        Delete = findViewById(R.id.DP_B_delete);
-
-        Update.setOnClickListener(new View.OnClickListener() {
+        Button buttonApply = findViewById(R.id.button_apply);
+        buttonApply.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(availabilityofblood.this, UpdateBloodDonor.class);
-                String id = donor.getKey();
-                startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Redirecting to update page...", Toast.LENGTH_SHORT).show();
+            public void onClick ( View v ) {
+
+                int radioId = radioGroup.getCheckedRadioButtonId();
+
+                radioButton = findViewById(radioId);
+                textView.setText("Your choice  :" + radioButton.getText());
+
             }
         });
+
     }
+
+    public void checkButton(View v) {
+        int radioId = radioGroup.getCheckedRadioButtonId();
+
+        radioButton = findViewById(radioId);
+
+        Toast.makeText(this,"Selected Radio Button :" +radioButton.getText(), Toast.LENGTH_SHORT).show();
+
+
+    }
+
 }

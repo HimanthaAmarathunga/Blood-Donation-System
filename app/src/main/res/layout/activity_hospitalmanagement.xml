@@ -101,7 +101,7 @@
                 android:id="@+id/rqst"
                 android:layout_width="66dp"
                 android:layout_height="57dp"
-                app:srcCompat="@drawable/list1" />
+                app:srcCompat="@drawable/req" />
 
             <Button
                 android:id="@+id/DR_B_rqst"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:background="#131515"
-                android:text="View list"
+                android:text="request"
                 android:textColor="#E8E3E3"
                 android:textStyle="bold" />
 
@@ -128,7 +128,7 @@
                 android:id="@+id/dlt"
                 android:layout_width="66dp"
                 android:layout_height="57dp"
-                app:srcCompat="@drawable/list1" />
+                app:srcCompat="@drawable/del1" />
 
             <Button
                 android:id="@+id/DR_B_dlt"
@@ -136,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:background="#131515"
-                android:text="View list"
+                android:text="delete"
                 android:textColor="#E8E3E3"
                 android:textStyle="bold" />
 
